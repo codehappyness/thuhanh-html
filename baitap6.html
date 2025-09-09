@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài tập 6</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>
+          <font color="blue"> Đăng ký thông tin học viên </font>
+        </legend>
+
+        <label>
+          <font color="blue"> Họ và tên: </font>
+        </label>
+        <input type="text" name="hoten" size="30" />
+
+        <label><font color="blue">Giới tính: </font></label>
+        <input type="radio" name="gioitinh" value="nam" />
+        <font color="blue">Nam</font>
+        <input type="radio" name="gioitinh" value="nu" />
+        <font color="blue">Nữ </font>
+        <label> <font color="blue">Năm sinh: </font> </label>
+        <input type="date" name="namsinh" />
+
+        <label><font color="blue">Nơi sinh: </font></label>
+        <select name="noisinh">
+          <option value="vl">Vĩnh Long</option>
+          <option value="ct">Cần Thơ</option>
+          <option value="hg">Hậu Giang</option>
+        </select>
+        <br />
+
+        <label><font color="blue">Điện thoại: </font></label>
+        <input type="text" name="dienthoai" size="20" />
+
+        <label><font color="blue">Email:</font></label>
+        <input type="email" name="email" />
+
+        <label><font color="blue">Ngoại ngữ: </font></label>
+        <input type="checkbox" name="anhvan" />
+        <font color="blue">Anh Văn </font>
+        <input type="checkbox" name="phapvan" />
+        <font color="blue">Pháp Văn </font>
+        <input type="checkbox" name="tienghoa" /><font color="blue"
+          >Tiếng Hoa
+        </font>
+        <br />
+
+        <label><font color="blue">Sở thích khác: </font></label>
+        <textarea name="sothich" cols="100" rows="5"></textarea>
+        <br />
+
+        <div align="center">
+          <input type="submit" value="Đăng ký" />
+          <input type="reset" value="Nhập lại" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
