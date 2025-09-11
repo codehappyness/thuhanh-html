@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+#layout {
+  margin: auto;
+  width: 1400px;
+}
+
+#header {
+  height: 100px;
+  background: #ff66ff;
+}
+
+#body_left {
+  float: left;
+  width: 200px;
+  height: 400px;
+  background: #0099ff;
+  font-size: 18px;
+  color: #cc0099;
+}
+
+#body_main {
+  float: left;
+  width: 1200px;
+  height: 400px;
+  background: #ff9900;
+  color: #000066;
+}
+
+#footer {
+  height: 100px;
+  background: #6699ff;
+  color: #cc3399;
+  clear: both;
+}
