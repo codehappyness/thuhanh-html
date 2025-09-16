@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Nâng Cao</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /*chon font va mau nen cho trang*/
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: dodgerblue;
+        color: white;
+        padding: 16px 32px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header .logo {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      header nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      header nav ul li {
+        margin: 0 15px;
+      }
+
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      header nav ul li a:hover {
+        color: white;
+      }
+      /* Hero */
+      .hero {
+        color: #333;
+        text-align: center;
+        padding: 150px 16px;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .hero button {
+        background: #e63946;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .hero button:hover {
+        background-color: #c0392b;
+      }
+      /* Services */
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .service {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        text-align: center;
+        transform: translateX(-5px);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        background: #222;
+        color: #fff;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header nav ul {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">LOGO</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Trang chủ</a>
+          </li>
+          <li>
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li>
+            <a href="#">Giới thiệu</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1>Chào mừng đến với Website</h1>
+      <button class="btn">Bắt đầu ngay</button>
+    </section>
+
+    <section class="services">
+      <div class="service">Dịch vụ 1</div>
+      <div class="service">Dịch vụ 2</div>
+      <div class="service">Dịch vụ 3</div>
+      <div class="service">Dịch vụ 4</div>
+    </section>
+    <footer class="footer"> &copy; 2024 Công ty ABC. Mọi quyền được bảo lưu.</footer>
+  </body>
+</html>

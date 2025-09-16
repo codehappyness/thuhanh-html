@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Nâng cao bài 4</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /*chon font va mau nen cho trang*/
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .transition-box {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition: all 0.5 ease;
+        margin: 20px;
+      }
+      .transition-box:hover {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="transition-box"></div>
+  </body>
+</html>
